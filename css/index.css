@@ -1,0 +1,953 @@
+
+
+/* 统一样式 */
+.body{
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+
+h1{
+    line-height: 1.1;
+}
+
+button{
+    cursor: pointer;
+}
+
+ul{
+    word-break: break-all;
+}
+/* 统一样式结束 */
+/* 公共样式开始 */
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.section{
+    margin-bottom: 30px;
+    min-height: 200px;
+    padding: 10px 0;
+}
+
+.section-sec{
+    background-color: #f7f7f7;
+    padding: 40px 0 20px;
+}
+
+.wrapper{
+    width: 950px;
+    margin: 0 auto;
+}
+
+.side-left{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.side-right{
+    width: 265px;
+    margin-left: 30px;
+}
+
+.side-nav{
+    margin-bottom: 40px;
+}
+
+.side-nav li{
+    margin-top: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+.mod{
+    margin-bottom: 30px;
+}
+
+.cate{
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.cate .cate-label{
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #333;
+}
+
+.cate li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.list .pic{
+    margin-bottom: 10px;
+}
+
+.list .title{
+    line-height: 1.45;
+    font-size: 13px;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+
+.rating{
+    margin-bottom: 4px;
+}
+
+.rating i{
+    margin-left: 4px;
+    color: #e09015;
+}
+
+.rating .txt{
+    margin-left: 4px;
+}
+
+.allstar25, .allstar30, .allstar35, .allstar40, .allstar45{
+    display: inline-block;
+    background: url(../img/ic_rating_s@2x.png) no-repeat left top/55px 121px;
+    width: 55px;
+    height: 11px;
+    margin: 0 3px 0 0;
+    overflow: hidden;
+}
+
+.allstar25{
+    background-position: 0 -55px;
+}
+
+.allstar30{
+    background-position: 0 -44px;
+}
+
+.allstar35{
+    background-position: 0 -33px;
+}
+
+.allstar40{
+    background-position: 0 -22px;
+}
+
+.allstar45{
+    background-position: 0 -11px;
+}
+
+.app-list li{
+    margin-top: 15px;
+}
+
+a.link-icon{
+    display: block;
+}
+
+.app-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/app_icons_50_10.jpeg) no-repeat;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #999;
+}
+
+.app-icon-fm{
+    background-position: -250px 0;
+}
+
+.app-icon-music{
+    background-position: -50px;
+}
+/* 公共样式结束 */
+/* 页面头部开始 */
+.header .banner{
+    background-color: #EDF4EC;
+    margin-bottom: 30px;
+}
+
+.header .banner .douban-logo{
+    background: url(.././img/logo_db.png) no-repeat 0 0;
+    background-image: image-set(url(.././img/logo_db.png) 1px, url(../img/logo_db@2x.png) 2px);
+    height: 20px;
+    width: 102px;
+    margin: 7px 13px;
+    vertical-align: middle;
+    background-size: contain;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.header .banner .douban-logo a{
+    height: 0;
+    padding-top: 60px;
+    display: block;
+}
+
+.header .container{
+    width: 1080px;
+    margin: 0 auto 25px;
+}
+
+.header .container .logo{
+    background: url(.././img/sitename.png) no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 73px;
+    line-height: 24px;
+    margin: 4px 24px 0 0;
+    display: inline-block;
+    text-indent: -999px;
+}
+
+.header .container .search{
+    display: inline-block;
+    position: relative;
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    vertical-align: middle;
+}
+
+.header .container .search .txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 3px;
+    font-size: 13px;
+}
+
+.header .container .search .txt::placeholder{
+    color: -internal-light-dark(black, white);
+}
+
+.header .container .search .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    color: #c3c3c3;
+}
+
+.header .container .menu{
+    margin-top: 6px;
+}
+
+.header .container .menu a{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat left top/463px 20px;
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.header .container .menu a:last-child{
+    width: 42px;
+}
+
+.header .container .menu .menu-book{
+    background-position: 0 0;
+}
+
+.header .container .menu .menu-movie{
+    background-position: -60px 0;
+}
+
+.header .container .menu .menu-music{
+    background-position: -120px 0;
+}
+
+.header .container .menu .menu-event{
+    background-position: -300px 0;
+}
+
+.header .container .menu .menu-group{
+    background-position: -180px 0;
+}
+
+.header .container .menu .menu-read{
+    background: url(../img/ic_read_home_nav@2x.png) no-repeat left top/40px 20px;
+}
+
+.header .container .menu .menu-fm{
+    background-position: -240px 0;
+}
+
+.header .container .menu .menu-shijian{
+    background: url(../img/ic_shijian_home_nav@2x.png) no-repeat left top/40px 21px;
+    height: 21px;
+}
+
+.header .container .menu .menu-market{
+    background-position: -421px 0;
+}
+/* 页面头部结束 */
+
+/* 横幅区域开始 */
+.pg-banner{
+    background: url(../img/bg1.jpeg) no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 305px) top;
+    background-color: #edf4ed;
+    margin-bottom: 25px;
+}
+
+.pg-banner .wrapper{
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pg-banner .wrapper .login iframe{
+    width: 300px;
+    height: 300px;
+}
+
+.pg-banner .wrapper div.app{
+    width: 150.031px;
+    position: absolute;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 460px;
+}
+
+.pg-banner .wrapper .app .title{
+    font-size: 25px;
+    margin: 7px 0;
+    color: #111;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.pg-banner .wrapper .app .title span{
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+.pg-banner .wrapper .app .container{
+    width: 150.031px;
+    padding-top: 18px;
+}
+
+.pg-banner .wrapper .app .container a.app{
+    display: inline-block;
+    background: #00B51D;
+    color: #fff;
+    border-radius: 2px;
+    padding: 9px 21px;
+    margin-right: 2px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.pg-banner .wrapper .app .container .app-qr{
+    position: relative;
+}
+
+.pg-banner .wrapper .app .container .app-qr a{
+    display: inline-block;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+}
+
+.pg-banner .wrapper .app .container .app-qr a img{
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+}
+
+.pg-banner .wrapper .app .container .app-qr .expand{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 20px 5px;
+    text-align: center;
+    color: #666;
+    background-color: #fff;
+    line-height: 13px;
+    border-radius: 2px;
+}
+
+.pg-banner .wrapper .app .container .app-qr .expand img{
+    width: 160px;
+    height: 160px;
+}
+
+.pg-banner .wrapper .app .container .app-qr .expand p{
+    margin: 13px 0;
+}
+
+.pg-banner .wrapper .app .container .app-qr a:hover + .expand{
+    display: block;
+}
+/* 横幅区域结束 */
+/* 热点区开始 */
+.hot-issue{
+    width: 950px;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.hot-issue .side{
+    width: 265px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.hot-issue .side h2 span.s{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666666;
+    line-height: 150%;
+}
+
+.hot-issue .side h2 span.s a:hover{
+    color: #fff;
+    background-color: #37a;
+}
+
+.hot-issue .side ul.hot-topic{
+    margin-top: -4px;
+}
+
+.hot-issue .side ul.hot-topic li.hot-topics{
+    margin-bottom: 15px;
+}
+
+.hot-issue .side ul.hot-topic li.hot-topics .hot-topics-name{
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.3;
+    display: inline-block;
+}
+
+.hot-issue .side ul.hot-topic li.hot-topics span.hot-topics-subtitle{
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1;
+    color: #aaaaaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hot-issue .main{
+    /* 创建bfc */
+    overflow: hidden;
+}
+
+.hot-issue .main h2 span{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666666;
+    line-height: 150%;
+}
+
+.hot-issue .main .album{
+    width: 350px;
+    margin-right: 30px;
+
+}
+
+.hot-issue .main .album ul{
+    text-align: justify;
+}
+
+.hot-issue .main .album ul li{
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.hot-issue .main .album ul li .pic{
+    display: inline-block;
+    width: 170px;
+    max-height: 170px;
+    vertical-align: middle;
+}
+
+.hot-issue .main .album ul li .num{
+    color: #999;
+}
+
+.hot-issue .main .note{
+    width: 275px;
+    font-size: 12px;
+    color: #666;
+}
+
+.hot-issue .main .note ul li{
+    margin-top: 12px;
+}
+
+.hot-issue .main .note ul li.first{
+    margin-top: 0;
+}
+
+.hot-issue .main .note ul li.first .author{
+    color: #999;
+}
+/* 热点区结束 */
+/* 豆瓣时间区开始 */
+.time{
+    font-size: 12px;
+}
+
+.time .wrapper .side{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.time .wrapper .main{
+    overflow: hidden;
+
+}
+
+.time .wrapper .main .time-list li{
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin-right: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.time .wrapper .main .time-list li .cover{
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.time .wrapper .main .time-list li .cover img{
+    width: 100px;
+    height: 141px;
+    vertical-align: middle;
+}
+
+.time .wrapper .main .time-list li .cover .audio{
+    background: url(../img/audio.png) center/14px no-repeat;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+.time .wrapper .main .time-list li .title{
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.38;
+}
+
+.time .wrapper .main .time-list li .title:hover{
+    color: #fff;
+}
+
+.time .wrapper .main .time-list li .type{
+    color: #999999;
+    line-height: 1;
+    margin-top: 10px;
+    display: block;
+}
+/* 豆瓣时间区结束 */
+/* 豆瓣电影区开始 */
+.movie a{
+    color: #27a;
+}
+
+.movie .wrapper .side-left h2 a{
+    color: #27a;
+}
+
+.movie .wrapper .side-left .side-nav{
+    margin-bottom: 40px;
+}
+
+.movie .wrapper .side-left .side-nav ul li{
+    margin-top: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+.movie .wrapper .side-left .side-nav ul li.side-bt img{
+    position: absolute;
+    top: 4px;
+    left: 46px;
+}
+
+.movie .wrapper .side-right .mod{
+    margin-bottom: 30px;
+}
+
+.movie .wrapper .side-right .mod .tag ul{
+    margin-top: -4px;
+}
+
+.movie .wrapper .side-right .mod .tag ul li{
+    width: 4em;
+    margin-top: 4px;
+    text-align: left;
+}
+
+.movie .wrapper .side-right .mod .movie-list ol li{
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #eaeaea;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.movie .wrapper .side-right .mod .movie-list ol li a{
+    margin-left: 5px;
+}
+
+.movie .wrapper .main{
+    overflow: hidden;
+}
+
+.movie .wrapper .main .movie-list ul{
+    text-align: justify;
+}
+
+.movie .wrapper .main .movie-list ul li{
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100px;
+    margin-right: 30px;
+}
+
+.movie .wrapper .main .movie-list ul li:nth-child(4n){
+    margin-right: 0;
+}
+
+.movie .wrapper .main .movie-list ul li .pic{
+    height: 145px;
+}
+
+.movie .wrapper .main .movie-list ul li .pic a img{
+    width: 100px;
+    height: 145px;
+    vertical-align: middle;
+}
+
+.movie .wrapper .main .movie-list ul li .title a{
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.movie .wrapper .main .movie-list ul li .title a:hover{
+    color: #fff;
+}
+
+.movie .wrapper .main .movie-list ul li a.btn-link{
+    background-color: #1c8bd0;
+    color: #fff;
+}
+
+.movie .wrapper .main .movie-list ul li a.btn-link:hover{
+    background: #047fcb;
+}
+/* 豆瓣电影区结束 */
+
+/* 豆瓣小组区开始 */
+.group{
+    font-size: 12px;
+}
+
+.group a.link{
+    color: #007982;
+}
+
+.group a.link:hover{
+    color: #fff;
+}
+
+.group .wrapper .side-right .mod .cate .cate-label a{
+    color: #333;
+}
+
+.group .wrapper .side-right .mod .cate .cate-label a:hover{
+    color: #fff;
+}
+
+.group .wrapper .main{
+    overflow: hidden;
+}
+
+.group .wrapper .main .group-list ul{
+    margin-left: -30px;
+}
+
+.group .wrapper .main .group-list li{
+    width: 248px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+    color: #999;
+}
+
+.group .wrapper .main .group-list li .pic{
+    margin-right: 15px;
+}
+
+.group .wrapper .main .group-list li .pic img{
+    width: 48px;
+}
+
+.group .wrapper .main .group-list li .info{
+    overflow: hidden;
+}
+
+.group .wrapper .main .group-list li .title{
+    margin-bottom: 5px;
+}
+
+/* 豆瓣小组区结束 */
+
+/* 豆瓣读书区开始 */
+.book{
+    font-size: 12px;
+}
+
+.book a.link{
+    color: #4a2f14;
+}
+
+.book a.link:hover{
+    color: #fff;
+}
+
+.book .wrapper .side-left .side-nav ul li.side-bt img{
+    position: absolute;
+    top: 4px;
+    left: 28px;
+}
+
+.book .wrapper .side-left .app-list{
+    margin-top: -15px;
+}
+
+.book .wrapper .side-left .app-list .link-icon{
+    display: block;
+}
+
+.book .wrapper .side-left .app-list .app-icon{
+    background-position: 0 0;
+}
+
+.book .wrapper .side-right .mod .cate{
+    padding-top: 10px;
+    margin: -1px 0 10px -10px;
+    border-top: 1px solid #eaeaea;
+}
+
+.book .wrapper .side-right .mod .cate.first{
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
+}
+
+.book .wrapper .side-right .mod .cate .cate-label{
+    font-size: 12px;
+    color: #999;
+    width: auto;
+}
+
+.book .wrapper .main{
+    overflow: hidden;
+}
+
+.book .wrapper .main .mod ul li{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.book .wrapper .main .mod ul li:nth-child(4n){
+    margin-right: 0;
+}
+
+.book .wrapper .main .mod ul li .pic{
+    height: 148px;
+}
+
+.book .wrapper .main .mod ul li .pic img{
+    width: 100px;
+}
+
+.book .wrapper .main .mod ul li .btn-link{
+    color: #fff;
+    background-color: #999a95;;
+}
+
+.book .wrapper .main .mod ul li a.btn-link:hover{
+    background: #878882;
+}
+/* 豆瓣读书区结束 */
+
+/* 豆瓣音乐区开始 */
+.music{
+    font-size: 12px;
+}
+
+.music a.link{
+    color: #555d53;
+}
+
+.music a.link:hover{
+    color: #fff;
+}
+
+.music .wrapper .side-left .section-title a{
+    color: #f38c00;
+}
+
+.music .wrapper .side-left .section-title a:hover{
+    color: #fff;
+}
+
+.music .wrapper .side-left .app-list ul{
+    margin-top: -15px;
+}
+
+.music .wrapper .side-right .mod .artist-list li{
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.music .wrapper .side-right .mod .artist-list li .num{
+    margin-right: 10px;
+    max-height: 61px;
+}
+
+.music .wrapper .side-right .mod .artist-list li .pic{
+    max-height: 61px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.music .wrapper .side-right .mod .artist-list li .pic a img{
+    width: 48px;
+}
+
+.music .wrapper .side-right .mod .artist-list li .pic .bg-play{
+    display: none;
+    width: 48px;
+    height: 49px;
+    margin-top: -53px;
+    background: #222;
+    opacity: .85;
+}
+
+.music .wrapper .side-right .mod .artist-list li .pic:hover >.bg-play{
+    display: block;
+}
+
+.music .wrapper .side-right .mod .artist-list li .pic .play{
+    background: url(../img/ic_bg_play.png) no-repeat 0 0;
+    width: 9px;
+    height: 11px;
+    margin: -6px 0 0 -4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.music .wrapper .side-right .mod .artist-list li .content{
+    overflow: hidden; 
+}
+
+.music .wrapper .side-right .mod .artist-list li .content .desc{
+    margin-top: 4px;
+    color: #999;
+}
+
+.music .wrapper .main{
+    overflow: hidden;
+}
+
+.music .wrapper .main .mod .song-list li{
+    text-align: center;
+    width: 110px;
+    margin-right: 20px;
+}
+
+.music .wrapper .main .mod .song-list li .pic{
+    height: 80px;
+}
+
+.music .wrapper .main .mod .song-list li .pic img{
+    width: 80px;
+    max-height: 120px;
+}
+
+.music .wrapper .main .mod .song-list li .title{
+    color: #666;
+    max-width: 120px;
+}
+
+.music .wrapper .main .mod .programme-list li{
+    text-align: center;
+    width: 100px;
+    margin-right: 30px;
+}
+
+.music .wrapper .main .mod .programme-list li .pic{
+    position: relative;
+}
+
+.music .wrapper .main .mod .programme-list li .pic img{
+    width: 80px;
+}
+
+.music .wrapper .main .mod .programme-list li .pic a i{
+    position: absolute;
+    background: url(../img/timeline-player-cover@2x.png) no-repeat left top/44px 44px;
+    width: 80px;
+    height: 80px;
+    background-position: 50% 50%;
+    left: 0;
+    opacity: .8;
+}
+/* 豆瓣音乐区结束 */
+
+/* 页尾区域开始 */
+.wrapper .foot{
+    padding: 14px 0;
+    margin-top: 30px;
+    border-top: 1px dashed #dcdcdc;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.wrapper .foot span img{
+    height: 16px;
+    vertical-align: top;
+}
+/* 页尾区域结束 */

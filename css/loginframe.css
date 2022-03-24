@@ -1,0 +1,338 @@
+@import url(./common.css);
+
+
+/* 统一设置 */
+a{
+    color: #41ac52;
+}
+
+input[type="text"], input[type="password"]{
+    width: 280px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+/* 统一设置结束 */
+
+.container{
+    width: 300px;
+    height: 296px;
+    min-height: 200px;
+    padding: 30px 10px 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container .login .switch-menu{
+    color: #9b9b9b;
+    margin-bottom: 10px;
+}
+
+.container .login .switch-menu{
+    border-bottom: 1px solid #ececec;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.container .login .switch-menu span{
+    width: 140px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container .login .switch-menu span.selected{
+    border-bottom: 2px solid #494949;
+    color: #333;
+    font-weight: 600;
+}
+
+.container .login .form .form-tip{
+    color: #9b9b9b;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.container .login .form .form-raw{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container .login .form .form-raw .phone{
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+.container .login .form .form-raw .area-code{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 50px;
+}
+
+.container .login .form .form-raw .area-code .selected{
+    text-align: center;
+    padding-right: 1px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.container .login .form .form-raw .area-code .selected::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-right: 1px solid;
+    border-color: #dfdfdf;
+    top: 8px;
+    right: 1px;
+    height: 22px;
+}
+
+.container .login .form .form-raw .area-code .choose-area{
+    /* 铺满整个视口，为半透明的白色 */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffb3;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box{
+    width: 340px;
+    height: 256.48px;
+    position: fixed;
+    top: 30px;
+    left: 485px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box .title{
+    padding: 10px 10px 6px 14px;
+    background: #ebf5eb;
+    font-size: 16.38px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    color: #060;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box ul{
+    font-size: 14px;
+    height: 182px;
+    max-height: 30em;
+    padding: 15px;
+    overflow: auto;
+    font-weight: 700;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box ul li:first-child{
+    border-top: 1px solid #e5e5e5;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box ul li{
+    line-height: 2.6;
+    color: #494949;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box ul li span.float-right{
+    color: #aaa;
+    font-weight: 400;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box ul li.active span{
+    color: #42bd56;
+}
+
+.container .login .form .form-raw .area-code .choose-area .box ul li .iconfont{
+    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.container .login .form .form-raw a.code{
+    position: absolute;
+    padding: 0 10px;
+    right: 0;
+    top: -4px;
+    line-height: 42px;
+    color: #41ac52;
+}
+
+.container .login .form .form-item{
+    width: 280px;
+}
+
+.container .login .form .form-item .btn{
+    width: 280px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #41ac52;
+}
+
+.container .login .form .form-item p.float-right{
+    margin: 10px 0;
+}
+
+.container .login .form .form-item span.txt{
+    color: #41ac52;
+}
+
+.container .login .form .form-tip.psword{
+    margin-bottom: 10px;
+}
+
+.container .login .form .form-tip.psword a{
+    font-size: 12px;
+}
+
+.container .login .form .form-raw a.psword{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px;
+    color: #9b9b9b;
+    line-height: 42px;
+}
+
+.container .login .trd{
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.container .login .trd .title{
+    display: inline-block;
+    color: #9b9b9b;
+    font-size: 11px;
+    text-align: center;
+}
+
+.container .login .trd .trd-icon{
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.container .login .trd-icon a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    line-height: 36px;
+    margin: 0 0 0 12px;
+}
+
+.container .login .trd .trd-icon a.wechat{
+    background: url(../img/wechat.svg) no-repeat left top/22px 22px;
+}
+
+.container .login .trd .trd-icon a.weibo{
+    background: url(../img/weibo.svg) no-repeat left top/22px 22px;
+}
+
+.container .login .icon-switch .switch{
+    background: url(../img/swich.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-size: 30px;
+}
+
+.container .login .icon-switch .switch:hover{
+    opacity: .8;
+}
+
+.container .login .icon-switch .switch:hover::before{
+    content: "\626B\7801\767B\5F55";
+    width: 53px;
+    height: 20px;
+    border: 1px solid rgba(66,189,86,.3);
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background: #f5faf9;
+}
+
+.container .qr-login .title{
+    border-bottom: 1px solid #ececec;
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.container .qr-login .qr-code{
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
+}
+
+.container .qr-login .qr-code img{
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.container .qr-login .qr-txt{
+    background-color: rgba(0,0,0,.08);
+    border-radius: 12px;
+    color: #494949;
+    padding: 3px 10px;
+    margin-top: 10px;
+    width: 252.58px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px auto 0 auto;
+}
+
+.container .qr-login .switch a{
+    background: url(../img/switch2.png) no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container .qr-login .switch a:hover{
+    opacity: .8;
+}
+
+.container .qr-login .switch a:hover::before{
+    content: "\77ED\4FE1\767B\5F55/\6CE8\518C";
+    width: 86px;
+    height: 20px;
+    border: 1px solid rgba(66,189,86,.3);
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background: #f5faf9;
+}
