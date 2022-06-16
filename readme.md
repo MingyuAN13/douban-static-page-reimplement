@@ -1,3 +1,3 @@
-# 项目实践-豆瓣首页
+# Reimplement of the douban website static page using HTML and CSS
 
-豆瓣首页地址：https://www.douban.com/
+The original douban website can reach by：https://www.douban.com/
